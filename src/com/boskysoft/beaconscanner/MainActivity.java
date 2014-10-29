@@ -39,6 +39,8 @@ public class MainActivity extends Activity {
         	}
 		});
 		
+		// Check if device supports BLE
+		
 		if (mBleWrapper.checkBleHardwareAvailable() == false) {
 			Toast.makeText(this, "No BLE-compatible hardware detected",
 					Toast.LENGTH_SHORT).show();
